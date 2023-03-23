@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+header{
+
+    font-family: 'Bitter', serif;
+
+}
+
+body{
+
+    font-family: 'Arimo', sans-serif;
+    /* background-color: #696969; */
+    /* background-color: #aaaaaa; cinza que ficou good*/
+    /* background-color: #0e1538; */
+    background-color: #063244;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: inherit;
+}
+
+a:visited{
+    color: ghostwhite;
+}
+
+/* ------------------------------------------Efeitos menu navegação------------------------------------------------ */
+nav a:visited{
+    color: white;
+}
+
+nav a{
+    position: relative;
+    color: white;
+}
+
+nav a::after{
+
+    content: " ";
+    width: 0%;
+    height: 1px;
+    background-color: #207977;
+    padding-bottom: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+
+
+}
+
+nav a:hover::after{
+
+    width: 100%;
+
+}
+
+.menu-list li{
+    list-style: none;
+}
+
+
+.header-menu{
+
+    font-family: 'Bitter', serif;;
+    /* border: black solid 1px; */
+    font-size: 17px;
+    color: ghostwhite;
+    font-weight: 700;
+    font-style: oblique;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    /* background-color: #808080; */
+    background: transparent;
+    backdrop-filter: blur(5px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.header-menu nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu-list{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    align-items: center;
+}
+
+/* ---------------------------------------------Fim menu navegação--------------------------------------------- */
+
+/* ************************************************************************************************************** */
+
+/* ---------------------------------Estilos da foto principal e efeitos dos links abaixo da foto----------------------- */
+
+img{
+
+    display: flex;
+    border-radius: 50%;
+    padding-top: 20px;
+    width: 400px;
+    height: 400px;
+    margin-top: 70px;
+    
+
+}
+
+
+.portPicture{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.principal{
+
+    display: flex;
+
+}
+
+.nameAndProf{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.nameAndProf h1{
+    color: #207977;
+    font-style: italic;
+    font-size: xx-large;
+    padding-bottom: 7px;
+}
+
+.nameAndProf h2{
+    color: #207977;
+    font-size: x-large;
+    font-style: oblique;
+    
+}
+
+.portLinks{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.portLinks a{
+
+    /* border: solid rgba(0, 0, 0, 0.76) 1px; */
+    /* border-radius: 10px 5px 10px 5px;
+    border: solid black 1px; */
+    margin: 15px 15px 0 0;
+    font-size: 20px;
+    padding: 10px 5px 10px 5px;
+    /* margin-top: 15px; */
+    color: ghostwhite;
+    position: relative;
+    border: solid white 1px;
+    border-radius: 5px 10px 5px 10px;
+
+}
+
+.portLinks a:hover{
+
+    color: #207977;
+    border: solid #204b5d 1px;
+    border-radius: 10px 5px 10px 5px;
+    transition-duration: 1s;
+    transform: scale(1.02);
+    transition: 0.7s ease-in-out;
+}
+
+/* ----------------------------------------Fim foto e links----------------------------------------------------- */
+
+/* ******************************************************************************************************************* */
+
+/* ------------------------Estilo de descrição, formação e posicionamento do footer--------------------------------------------- */
+.boxDescription{
+
+    /* background-color: #979595; cinza que ficou good */
+    background-color: #062c3c;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px;
+    padding: 15px 10px 15px 10px;
+}
+
+
+h3{
+    color: #207977;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.listFormation{
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    
+}
+.formationContent{
+
+    background-color: #062c3c;
+    margin: 20px;
+    padding: 10px 10px 15px 10px;
+    border-radius: 10px;
+}
+
+li{
+    color: white;
+    margin: 3px;
+    list-style: circle;
+    font-style: italic;
+}
+
+.listFormation li>p{
+
+    margin-left: 7px;
+}
+
+
+
+
+.footerDiv ul>li>a {
+
+    color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    
+}
+
+.footerDiv ul>li>a:visited{
+    color: ghostwhite;
+}
+
+.footerDiv ul>li>a:hover{
+    color: #207977;
+
+}
+
+#descriptionAbout p{
+    color: white;
+}
+
+
+/* -----------------------------------------------Fim descrição, formações e footer---------------------------- */
+
+
+
+
+
+
+
+
+
+/* ----------------------------------Teste efeito igual menu nav -------------------------------------- */
+
+/* .portLinks a::after{
+
+    content: " ";
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    padding: 1px 1px 1px 1px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.5s ease-in-out;
+    
+
+}
+
+.portLinks a:hover::after{
+
+    width: 100%;
+    border: solid rgba(0, 0, 0, 0.76) 1px;
+
+} */
+
+
